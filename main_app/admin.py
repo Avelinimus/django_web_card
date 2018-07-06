@@ -7,7 +7,9 @@ from main_app.models import Index, Services
 
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['name', 'price', 'available']
+    list_editable = ['available', 'price']
+    prepopulated_fields = {'slug': ('name',)}
 
 
 @admin.register(FAQ)
