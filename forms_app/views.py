@@ -17,6 +17,6 @@ def send_supp(request):
             send_mail('Support django_web_card', data, name, ['developerspython385@gmail.com'],
                       fail_silently=False)
             first_context = {'name': name}
-            return render(request, 'forms_app/thank_for_support.html', first_context)
+            return render(request, 'forms_app/successful_support.html', first_context)
     context = {'form': form}
     return render(request, 'forms_app/support.html', context)

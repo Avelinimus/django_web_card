@@ -23,8 +23,6 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(('main_app.urls', 'main_app'), namespace='main_app')),
-]
-urlpatterns = [
     path('support/', include(('forms_app.urls', 'forms_app'), namespace='forms_app'))
 ]
 urlpatterns += [
