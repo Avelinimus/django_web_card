@@ -7,13 +7,17 @@ def index():
     pass
 
 
-def services():
-    pass
-
-
 def faq():
     pass
 
 
 def contacts():
+    pass
+
+
+def service_list_view():
+    pass
+
+
+def service_detail_view():
     pass
