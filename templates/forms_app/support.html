@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+        <title>Поддержка</title>
+        <form method="POST" novalidate>
+            {% csrf_token %}
+            <div>
+                {% for field in form %}
+                <div class="form-group">
+                    {{field.label_tag}}
+                    <div>{{field}}</div>
+                    <div class="errors">{{field.errors}}</div>
+                </div>
+                {% endfor %}
+            </div>
+            <input type="submit" value="Отправить">
+        </form>
+    {% endblock content %}
+</body>
+</html>

@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main_app.apps.MainAppConfig',
+    'forms_app.apps.FormsAppConfig',
     'bootstrap3',
     'ckeditor',
     'ckeditor_uploader',
@@ -133,3 +134,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
 
 CKEDITOR_UPLOAD_PATH = '/uploads/'
+
+# EMAIL SETTINGS
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'developerspython385@gmail.com'
+EMAIL_HOST_PASSWORD = 'darkerthanblack228'
+DEFAULT_FROM_EMAIL = 'developerspython385@gmail.com'
+DEFAULT_TO_EMAIL = 'developerspython385@gmail.com'
