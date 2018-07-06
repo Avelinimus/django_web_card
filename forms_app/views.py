@@ -14,8 +14,11 @@ def send_supp(request):
             data = 'Имя: {0},\n\n Проблема: {1},\n\nE-mail: {2}'.format(name, comment, email)
             send_mail('Support django_web_card', data, name, ['developerspython385@gmail.com'],
                       fail_silently=False)
+            form.save(commit=False)
+            form.save()
             first_context = {'name': name}
-            return render(request, 'forms_app/thank_for_support.html', first_context)
-    form = SupportForm()
+            return render(request, 'forms_app/successful_support.html', first_context)
+    else:
+        form = SupportForm()
     context = {'form': form}
     return render(request, 'forms_app/support.html', context)
