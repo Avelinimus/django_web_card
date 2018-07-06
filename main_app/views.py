@@ -5,3 +5,15 @@ from django.shortcuts import render
 
 def index():
     pass
+
+
+def services():
+    pass
+
+
+def faq():
+    pass
+
+
+def contacts():
+    pass
