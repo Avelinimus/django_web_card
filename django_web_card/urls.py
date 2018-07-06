@@ -22,14 +22,15 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(('main_app.urls', 'main_app'), namespace='main_app')),
-    path('support/', include(('forms_app.urls', 'forms_app'), namespace='forms_app'))
+    path('support/', include(('forms_app.urls', 'forms_app'), namespace='forms_app')),
 ]
+
 urlpatterns += [
     # Добавьте URL соотношения, чтобы перенаправить запросы с корневового URL, на URL приложения
     path('', RedirectView.as_view(url='', permanent=True)),
+    path('', include(('main_app.urls', 'main_app'), namespace='main_app')),
 ]
-
+# URL-ы скачаных пакетов в интерпретатор
 urlpatterns += [
     # Подключаем интерактивный редактор
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
