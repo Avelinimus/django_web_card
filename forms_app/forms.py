@@ -1,8 +1,16 @@
 from django import forms
-from .models import Support
+from .models import Order, Support
 
 
-# Форма для отправки сообщения о проблеме на нашу почту
+# Форма для отправки сообщения заказчика на нашу почту/базу данных
+class OrderForm(forms.ModelForm):
+    class Meta:
+        model = Order
+        fields = ('name', 'surname', 'telephone', 'email', 'time', 'comment')
+        widgets = {'comment': forms.Textarea(attrs={'cols': 80})}
+
+
+# Форма для отправки сообщения о проблеме на нашу почту/базу данных
 class SupportForm(forms.ModelForm):
     class Meta:
         model = Support

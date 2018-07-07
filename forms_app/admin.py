@@ -1,8 +1,12 @@
 from django.contrib import admin
-from .models import Support
+from .models import Support, Order
 
 
 @admin.register(Support)
 class SupportAdmin(admin.ModelAdmin):
     list_display = ['name', 'email', 'comment']
-# Register your models here.
+
+
+@admin.register(Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ['name', 'surname', 'telephone', 'email', 'time', 'comment']

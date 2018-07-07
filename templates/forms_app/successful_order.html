@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}<title>Заказ принят.</title>{% endblock %}
+</head>
+<body>
+    {% block content %}
+        <div class="col-md-12 text-center">
+            <p>Здравствуйте, {{ name }} {{ surname }}, ваш заказ принят, ожидайте ответа.</p>
+        </div>
+    {% endblock content %}
+</body>
+</html>

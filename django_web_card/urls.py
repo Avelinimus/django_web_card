@@ -22,7 +22,7 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('support/', include(('forms_app.urls', 'forms_app'), namespace='forms_app')),
+    path('forms/', include(('forms_app.urls', 'forms_app'), namespace='forms_app')),
 ]
 
 urlpatterns += [

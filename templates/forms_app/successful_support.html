@@ -1,11 +1,12 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% block title %}<title>Спасибо за бдительность!</title>{% endblock %}
 </head>
 <body>
     {% block content %}
-    <title>Спасибо за бдительность!</title>
     <div class="col-md-12 text-center">
         <p>Здравствуйте, {{ name }}, ваше сообщение отправлено, ожидайте ответа</p>
     </div>
