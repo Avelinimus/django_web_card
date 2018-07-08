@@ -10,9 +10,10 @@ class Order(models.Model):
     name = models.CharField(max_length=100, verbose_name='Имя', db_index=True)
     surname = models.CharField(max_length=100, verbose_name='Фамилия', db_index=True, blank=True)
     telephone = models.CharField(max_length=12, verbose_name='Мобильный телефон', default='380', blank=True)
-    email = models.EmailField(verbose_name='E-mail', db_index=True)
-    time = models.CharField(max_length=30, verbose_name='Удобное время', default='Не важно', blank=True)
+    email = models.EmailField(verbose_name='E-mail', db_index=True, max_length=30)
+    time = models.CharField(max_length=30, verbose_name='Удобное для вас время', default='Не важно', blank=True)
     comment = models.CharField(max_length=200, verbose_name='Комментарий', blank=True)
+    flag = models.BooleanField(blank=True, verbose_name='Отправить оповещение вам на почту?', default=False)
 
 
 class Support(models.Model):
