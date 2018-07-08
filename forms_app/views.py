@@ -39,9 +39,7 @@ def send_supp(request):
                       fail_silently=False)
             form.save(commit=False)
             form.save()
-            first_context = {'name': name}
-            return render(request, 'forms_app/successful_support.html', first_context)
+            return render(request, 'forms_app/successful_support.html', {'name': name})
     else:
         form = SupportForm()
-    context = {'form': form}
-    return render(request, 'forms_app/support.html', context)
+    return render(request, 'forms_app/support.html', {'form': form})

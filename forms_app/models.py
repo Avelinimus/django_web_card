@@ -4,8 +4,8 @@ from django.db import models
 class Order(models.Model):
     class Meta:
         ordering = ['email']
-        verbose_name = 'Заказы'
-        verbose_name_plural = 'Заказ'
+        verbose_name = 'Заказ'
+        verbose_name_plural = 'Заказы'
 
     name = models.CharField(max_length=100, verbose_name='Имя', db_index=True)
     surname = models.CharField(max_length=100, verbose_name='Фамилия', db_index=True, blank=True)
@@ -18,8 +18,8 @@ class Order(models.Model):
 class Support(models.Model):
     class Meta:
         ordering = ['email']
-        verbose_name = 'Сообщения поддержки'
-        verbose_name_plural = 'Сообщение поддержки'
+        verbose_name = 'Сообщение поддержки'
+        verbose_name_plural = 'Сообщения поддержки'
 
     name = models.CharField(max_length=100, verbose_name='Имя', db_index=True)
     email = models.EmailField(max_length=100, verbose_name='E-mail', db_index=True)
