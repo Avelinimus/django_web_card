@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   {% block title %} Lab Room 47 {%endblock %}
+</head>
+<body>
+    {% block content %}
+        {% for service in service_list %}
+            <a href="{{ service.get_absolute_url }}">{{ service.name }}</a>
+            <p>{{ service.price }}</p>
+            {% autoescape off %}
+                {{ service.description }}
+            {% endautoescape %}
+            {{ service.image }}
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>

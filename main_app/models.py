@@ -60,7 +60,7 @@ class FAQ(models.Model):
         verbose_name = 'Вопрос/Ответ'
         verbose_name_plural = 'Вопросы/Ответы'
 
-    section = models.CharField(max_length=100, db_index=True, verbose_name='Название')
+    section = models.CharField(max_length=100, db_index=True, verbose_name='Название раздела')
     description = RichTextUploadingField(blank=True, verbose_name='Описание')
 
     def __str__(self):

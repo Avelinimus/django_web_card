@@ -7,10 +7,11 @@
 </head>
 <body>
     {% block content %}
-        {% for index in index_elements %}
-            {{ index.title }}
-            {{ index.description }}
-        {% endfor %}
+        {{ service.name }}
+         {% autoescape off %}
+             {{ service.description }}
+         {% endautoescape %}
+        {{ service.price }}
     {% endblock %}
 </body>
 </html>

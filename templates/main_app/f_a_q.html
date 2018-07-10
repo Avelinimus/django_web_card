@@ -1,11 +1,20 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    {% block title %} Вопросы / Ответы{%endblock %}
 </head>
 <body>
     {% block content %}
+        {% for faq in faq_elements %}
+            <div>
+                <h1>Раздел вопросов о {{ faq.section }}</h1>
+                {% autoescape off %}
+                    <p>{{ faq.description }}</p>
+                {% endautoescape %}
+            </div>
+        {% endfor %}
     {% endblock %}
 </body>
 </html>

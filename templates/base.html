@@ -6,11 +6,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content = "width=device-width">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    {% block title %}<title></title>{% endblock %}
-    <title>Title</title>
+    <title>{% block title %} {% endblock %}</title>
+
 </head>
-<body>
-    {% block content %}
-    {% endblock %}
-</body>
+    <body>
+        <header>
+            <div class="container">
+                <div class="col-xs-12 logo">
+                    <div class="row">
+                        <a href="/">
+                            <img src="{% static 'main_app/img/logo.png' %}" class="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="knopki">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <ul class="mainmenu">
+                                <a href="{% url 'main_app:index' %}"><li class="onas">Главная</li></a>
+                                <a href="{% url 'main_app:service_list' %}"><li class="uslugi">Услуги</li></a>
+                                <a href="{% url 'forms_app:order' %}"><li class="zakazi">Сделать Заказ</li></a>
+                                <a href="{% url 'main_app:contacts' %}"><li class="kontakt">Контакты</li></a>
+                                <a href="{% url 'main_app:faq' %}"><li class="faq">FAQ</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="kont">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mestopodkontent">
+                        {% block content %}
+
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="col-xs-12">\
+                    <div class="row"></div>
+                    <div class="row"><h3>&copy; LABROOM47</h3></div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

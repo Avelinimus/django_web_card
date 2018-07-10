@@ -23,12 +23,13 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('forms/', include(('forms_app.urls', 'forms_app'), namespace='forms_app')),
+    path('main/', include(('main_app.urls', 'main_app'), namespace='main_app')),
 ]
 
 urlpatterns += [
     # Добавьте URL соотношения, чтобы перенаправить запросы с корневового URL, на URL приложения
-    path('', RedirectView.as_view(url='', permanent=True)),
-    path('', include(('main_app.urls', 'main_app'), namespace='main_app')),
+    path('', RedirectView.as_view(url='main', permanent=True)),
+
 ]
 # URL-ы скачаных пакетов в интерпретатор
 urlpatterns += [
