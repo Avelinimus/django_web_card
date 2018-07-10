@@ -2,6 +2,7 @@
   <dictionary name="avel">
     <words>
       <w>ckeditor</w>
+      <w>postgressql</w>
     </words>
   </dictionary>
 </component>
