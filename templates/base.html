@@ -13,20 +13,21 @@
 <body>
     <div class="container-fluid">
         <div class="row header-row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg">
+            <div class="col-12" style="border-bottom: 4px solid #47B3B5">
+                <nav class="navbar navbar-expand-lg custom-toggler">
 
-                    <a class="navbar-brand" href="#">
-                        <img src="{% static 'main_app/img/logo.png' %}" style="width: 120px; height: 120px;">
+                    <a class="navbar-brand" href="{% url 'main_app:index' %}" style="color: #e0e0e0; font-size: 24px;">
+                        <img src="{% static 'main_app/img/logo.png' %}" style="width: 100px; height: 100px;">
                         Chamber47
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                   </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" align="center">
+                        <ul class="navbar-nav mr-auto" style="position: absolute; right: 0;">
+
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home </a>
                             </li>
@@ -36,6 +37,15 @@
                             <li class="nav-item">
                                 <a class="nav-link disabled" href="#">Disabled</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+
+
                         </ul>
                     </div>
 
@@ -53,5 +63,8 @@
 
         </div>
     </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
