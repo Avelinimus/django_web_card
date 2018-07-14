@@ -1,65 +1,13 @@
-body{
-	background-image:url(/static/main_app/img/bk.jpg);
+.container-fluid{
+    background-color: #1d242c;
+    min-height: 1500px;
 }
-.container
-{
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-/*menu*/
-
-ul.mainmenu{
-	height:auto;
-	margin:0;
-	padding:4px;
+.header-row{
 
 }
-ul.mainmenu a{
-	color:black;
-}
-ul.mainmenu li {
-	  display:inline-block;
-	background-image:url(/static/main_app/img/butt.png);
-	list-style-type:none;
-  width:116px;
-  line-height:45px;
-	text-align:center;
-	height:45px;
-	margin-right:10px;
-	margin-left:10px;
-	z-index:5;
-}
-ul.mainmenu li:hover {
-	background-image:url(/static/main_app/img/butthov.png);
-}
-
-a{
+.content-row{
 
 }
+.footer-row{
 
-.logo{
-width:200px;
-height:85px;
-}
-
-
-.kont{
-	margin-top:15px;
-	padding-top:25px;
-}
-
-.mestopodkontent{
- background-color:white;
- display:block;
-
- word-wrap:break-word;
-
-}
-
-footer{
-	margin-top:25px;
-	padding-top:10px;
-	background-color:black;
 }
