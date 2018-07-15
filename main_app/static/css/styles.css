@@ -6,7 +6,8 @@
     min-height: 100px;
 }
 .content-row{
-
+    background-color: white;
+    min-height: 500px;
 }
 .footer-row{
 
