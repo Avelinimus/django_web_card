@@ -6,9 +6,20 @@
     {% block title %} Lab Room 47 {%endblock %}
 </head>
 <body>
-    <div class="about">
 
-    </div>
+    {% block row %}
+        <div class="about-row">
+            <h2 align="center" style="padding-top: 30px">Chamber</h2><h2 align="center" style="white-space:nowrap; color: #47B3B5">47</h2>
+            <p align="center" style="max-width: 400px; margin: auto; font-size: 20px"> fdoskfas ojfopasdja sopdkas ofkasopj fiosdhag uisdhfg uiasdhfio;asdf</p>
+
+            <div style="text-align: center; padding-top: 30px">
+                <a href="{% url 'main_app:service_list' %}"style="margin: auto">
+                    <button class="new-button">Наши услуги</button>
+                </a>
+            </div>
+        </div>
+    {% endblock %}
+
     {% block content %}
         {% for index in index_elements %}
             {{ index.title }}
