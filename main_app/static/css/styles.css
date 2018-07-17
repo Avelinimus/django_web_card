@@ -81,7 +81,7 @@ button.new-button{
 .serviceBox:before{
     background: #47B3B5;
 }
-.serviceBox:hover:after{
+.serviceBox:hover:after {
     background: rgba(9, 3, 18, 0.69);
     transform: rotate(10deg);
 }
@@ -98,6 +98,162 @@ button.new-button{
 .serviceBox .description{
     font-size: 14px;
 }
+
+.serviceBox i.gear{
+    background: url(/static/main_app/img/pen-no.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.serviceBox i.rocket{
+    background: url(/static/main_app/img/rocket-no.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.serviceBox i.pen{
+    background: url(/static/main_app/img/gear-yes.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.serviceBox:hover i.gear{
+    background: url(/static/main_app/img/pen-yes.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.serviceBox:hover i.rocket{
+    background: url(/static/main_app/img/rocket-yes.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.serviceBox:hover i.pen{
+    background: url(/static/main_app/img/gear-no.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+
+
+.serviceBox i.gear-new{
+    background: url(/static/main_app/img/pen-no.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    margin: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.serviceBox i.rocket-new{
+    background: url(/static/main_app/img/rocket-no.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    margin: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.serviceBox i.pen-new{
+    background: url(/static/main_app/img/gear-yes.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    margin: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.serviceBox:hover i.gear-new{
+    background: url(/static/main_app/img/pen-no.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.serviceBox:hover i.rocket-new{
+    background: url(/static/main_app/img/rocket-no.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);;
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.serviceBox:hover i.pen-new{
+    background: url(/static/main_app/img/gear-yes.png);
+    background-size: 50px 50px;
+    transform: rotate(40grad);
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
     .desktop-header-menu{
