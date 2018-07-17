@@ -1,6 +1,9 @@
 .container-fluid{
     color: #c5c5c5;
+    margin-right: 0;
+    margin-left: 0;
 }
+
 button.new-button{
     color: white;
     text-align: center;
@@ -28,12 +31,14 @@ button.new-button{
     min-height: 300px;
     border-bottom: 4px solid #47B3B5;
     color: #c5c5c5;
+
 }
 .about-site-row{
     min-height: 500px;
     border-bottom: 4px solid #47B3B5;
     text-align: center;
 }
+
 .about-site-row h3{
     padding-top: 20px;
 }
