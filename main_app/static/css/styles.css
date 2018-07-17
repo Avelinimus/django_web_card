@@ -1,5 +1,5 @@
 .container-fluid{
-    color: #c5c5c5;
+    color: #ffffff;
     margin-right: 0;
     margin-left: 0;
 }
@@ -31,7 +31,6 @@ button.new-button{
     min-height: 300px;
     border-bottom: 4px solid #47B3B5;
     color: #c5c5c5;
-
 }
 .about-site-row{
     min-height: 500px;
@@ -57,95 +56,6 @@ button.new-button{
 	position: absolute;
 	right: 3%;
 }
-
-
-.animate-1{
-    position:relative;
-    margin:0 auto;
-}
-.animate-1 img{
-    position: absolute;
-    left: 70%;
-    top: 20px;
-}
-.animate-2{
-    position:relative;
-    margin:0 auto;
-}
-.animate-2 img{
-    position: absolute;
-    left: 70%;
-    top: 20px;
-}
-.animate-3{
-    position:relative;
-    margin:0 auto;
-}
-.animate-3 img{
-    position: absolute;
-    left: 70%;
-    top: 20px;
-}
-.animate-1 img.first{
-    opacity:0;
-    filter:alpha(opacity=0);
-}
-.animate-1 :hover img.first {
-    opacity:1;
-    filter:alpha(opacity=100);
-}
-.animate-1 :hover img.second, .animate-1 img.second:hover {
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-}
-.animate-2 img.first{
-    opacity:0;
-    filter:alpha(opacity=0);
-}
-.animate-2 :hover img.first {
-    opacity:1;
-    filter:alpha(opacity=100);
-}
-.animate-2 :hover img.second, .animate-2 img.second:hover {
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-}
-.animate-3 img.first{
-    opacity:0;
-    filter:alpha(opacity=0);
-}
-.animate-3 :hover img.first {
-    opacity:1;
-    filter:alpha(opacity=100);
-}
-.animate-3 :hover img.second, .animate-3 img.second:hover {
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-}
-.animate-1 p, .animate-2 p, .animate-3 p{
-    padding-top: 20px;
-}
-.animate-1 h3, .animate-2 h3, .animate-3 h3{
-    padding-top: 40px;
-}
-
-
-
-@media screen and (max-width: 1000px) {
-    .desktop-header-menu{
-        position: relative;
-        right: 0;
-    }
-}
 .serviceBox{
     top: 40px;
     border: 1px solid #47B3B5;
@@ -163,16 +73,13 @@ button.new-button{
     height: 200%;
     background: #1d242c;
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 0;
     z-index: -1;
     transition: all 1s ease 0.1s;
 }
 .serviceBox:before{
     background: #47B3B5;
-}
-.serviceBox:hover:before{
-    transform: rotate(0deg);
 }
 .serviceBox:hover:after{
     background: rgba(9, 3, 18, 0.69);
@@ -191,17 +98,11 @@ button.new-button{
 .serviceBox .description{
     font-size: 14px;
 }
-@media only screen and (max-width: 990px){
+
+@media screen and (max-width: 1000px) {
+    .desktop-header-menu{
+        position: relative;
+        right: 0;
+    }
     .serviceBox{ margin-bottom: 30px; }
-}
-@media only screen and (max-width: 767px){
-    .serviceBox:before,
-    .serviceBox:after{
- }
-}
-@media only screen and (max-width: 480px){
-    .serviceBox:before,
-    .serviceBox:after{
-;
- }
 }
