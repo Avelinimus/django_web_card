@@ -28,23 +28,23 @@
 
                     <div class="collapse navbar-collapse desktop-header-menu" id="navbarSupportedContent" align="center">
                         <ul class="navbar-nav mr-auto">
-
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{% url 'main_app:index' %}">Главная</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'main_app:service_list' %}">Услуги</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'forms_app:order' %}">Заказ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'main_app:contacts' %}">Контакты</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'main_app:faq' %}">FAQ</a>
-                            </li>
-
+                            {% block main_menu %}
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'main_app:index' %}">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'main_app:service_list' %}">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'forms_app:order' %}">Заказ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'main_app:contacts' %}">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'main_app:faq' %}">FAQ</a>
+                                </li>
+                            {% endblock %}
                         </ul>
                     </div>
 

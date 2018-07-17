@@ -6,6 +6,24 @@
     {% block title %} Поддержка {% endblock %}
 </head>
 <body>
+    {% block main_menu %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'main_app:index' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'main_app:service_list' %}">Услуги</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'forms_app:order' %}">Заказ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'main_app:contacts' %}">Контакты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'main_app:faq' %}">FAQ</a>
+        </li>
+    {% endblock %}
+
     {% block content %}
         <form method="POST">
             {% csrf_token %}

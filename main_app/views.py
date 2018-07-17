@@ -21,7 +21,7 @@ def faq(request):
 
 def contacts(request):
     contacts_elements = Contact.objects.all()
-    return render(request, 'main_app/index.html', {
+    return render(request, 'main_app/contacts.html', {
         'contacts_elements': contacts_elements
     })
 
