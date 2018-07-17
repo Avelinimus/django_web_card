@@ -23,10 +23,10 @@ button.new-button{
 .content-row{
     min-height: 500px;
     padding: 15px;
+    border-top: 4px solid #47B3B5;
+    border-bottom: 4px solid #47B3B5;
 }
-.footer-row{
 
-}
 .about-row{
     min-height: 300px;
     border-bottom: 4px solid #47B3B5;
@@ -110,7 +110,7 @@ button.new-button{
     left: 50%;
     margin-left: -25px;
     opacity: 0;
-    transition: opacity 2s;
+
 }
 .serviceBox i.rocket{
     background: url(/static/main_app/img/rocket-no.png);
@@ -123,7 +123,7 @@ button.new-button{
     left: 50%;
     margin-left: -25px;
     opacity: 0;
-    transition: opacity 2s;
+
 }
 .serviceBox i.pen{
     background: url(/static/main_app/img/gear-yes.png);
@@ -136,7 +136,7 @@ button.new-button{
     left: 50%;
     margin-left: -25px;
     opacity: 0;
-    transition: opacity 2s;
+
 }
 .serviceBox:hover i.gear{
     background: url(/static/main_app/img/pen-yes.png);
@@ -189,7 +189,6 @@ button.new-button{
     width: 50px;
     height: 50px;
     opacity: 1;
-    transition: opacity 2s;
 }
 
 .serviceBox i.rocket-new{
@@ -201,7 +200,7 @@ button.new-button{
     width: 50px;
     height: 50px;
     opacity: 1;
-    transition: opacity 2s;
+
 }
 .serviceBox i.pen-new{
     background: url(/static/main_app/img/gear-yes.png);
@@ -212,7 +211,7 @@ button.new-button{
     width: 50px;
     height: 50px;
     opacity: 1;
-    transition: opacity 2s;
+
 }
 .serviceBox:hover i.gear-new{
     background: url(/static/main_app/img/pen-no.png);
