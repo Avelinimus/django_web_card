@@ -2,21 +2,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     {% block title %} Lab Room 47 {%endblock %}
 </head>
 <body>
 
     {% block row %}
-        <div class="about-row">
-            <h2 align="center" style="padding-top: 30px">Chamber</h2><h2 align="center" style="white-space:nowrap; color: #47B3B5">47</h2>
-            <p align="center" style="max-width: 400px; margin: auto; font-size: 20px"> fdoskfas ojfopasdja sopdkas ofkasopj fiosdhag uisdhfg uiasdhfio;asdf</p>
+        <div class="row about-row">
 
-            <div style="text-align: center; padding-top: 30px">
+            <div class="col-12">
+                <h2 align="center" style="padding-top: 30px">Chamber</h2><h2 align="center" style="white-space:nowrap; color: #47B3B5">47</h2>
+                <p align="center" style="max-width: 400px; margin: auto; font-size: 20px"> fdoskfas ojfopasdja sopdkas ofkasopj fiosdhag uisdhfg uiasdhfio;asdf</p>
+            </div>
+
+            <div class="col-12" style="text-align: center; padding-top: 30px">
                 <a href="{% url 'main_app:service_list' %}"style="margin: auto">
                     <button class="new-button">Наши услуги</button>
                 </a>
             </div>
+
+        </div>
+        <div class="row about-site-row">
+
+            <div class="col-12 col-lg-4 about-site-col" style="border-right: 4px solid #47B3B5">
+                <div class="animate-1">
+                    <h3>Поддержка
+                        <img src="{% static 'main_app/img/gear-no.png'%}" width="70px" height="70px" class="first">
+                        <img src="{% static 'main_app/img/gear-yes.png'%}" width="70px" height="70px" class="second">
+                    </h3>
+                    <p>ddASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJD</p>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 about-site-col" style="border-right: 4px solid #47B3B5">
+                <div class="animate-2">
+                    <h3>Оптимизация
+                        <img src="{% static 'main_app/img/rocket-yes.png'%}" width="70px" height="70px" class="first">
+                        <img src="{% static 'main_app/img/rocket-no.png'%}" width="70px" height="70px" class="second">
+                    </h3>
+                    <p>ddASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJD</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 about-site-col">
+                <div class="animate-3">
+                    <h3>Дизайн
+                        <img src="{% static 'main_app/img/pen-yes.png'%}" width="70px" height="70px" class="first">
+                        <img src="{% static 'main_app/img/pen-no.png'%}" width="70px" height="70px" class="second">
+                    </h3>
+                    <p>ddASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDdASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJDASJIDIOPASJDOPAS J OPDJASOPDJASOP AODJ OPADJSOPJ ASOP ODJ SAOPJD</p>
+                </div>
+            </div>
+
         </div>
     {% endblock %}
 
