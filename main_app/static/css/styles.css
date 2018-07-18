@@ -27,6 +27,7 @@ button.new-button{
     color: #ffffff;
     margin-right: 0;
     margin-left: 0;
+    font-family: 'Poor Story', cursive;
 }
 .header-row{
     min-height: 100px;
@@ -37,8 +38,6 @@ button.new-button{
     border-bottom: 4px solid #47B3B5;
     font-family: 'Poor Story', cursive;
 }
-
-
 .custom-toggler .navbar-toggler-icon {
 	border: 1px dashed rgba(255,255,255, 1);
 	border-radius: 5px;
@@ -238,10 +237,36 @@ button.new-button{
     opacity: 0;
     transition: opacity 2s;
 }
-
-
-
-
+a.telegram{
+    background: url(/static/main_app/img/telegram.png) no-repeat;
+    display: inline-block;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: 15%;
+}
+a.viber{
+    background: url(/static/main_app/img/viber.png) no-repeat;
+    display: inline-block;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: 42%;
+}
+a.gmail{
+    background: url(/static/main_app/img/gmail.png) no-repeat;
+    display: inline-block;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: 68%;
+}
 
 
 
