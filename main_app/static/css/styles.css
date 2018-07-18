@@ -239,16 +239,6 @@ button.new-button{
     transition: opacity 2s;
 }
 
-@media screen and (max-width: 1000px) {
-    .desktop-header-menu{
-        position: relative;
-        right: 0;
-    }
-    .serviceBox{
-        margin-bottom: 50px;
-    }
-}
-
 .services-list{
     border: 1px solid #47B3B5;
     text-align: center;
@@ -296,17 +286,49 @@ button.new-button{
 .services-list .description{
     font-size: 14px;
 }
-@media only screen and (max-width: 990px){
-    .services-list{ margin-bottom: 30px; }
+.telegram{
+    background: url(/static/main_app/img/telegram.png);
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 15%;
+    top: 50%;
+
 }
-@media only screen and (max-width: 767px){
-    .services-list:before,
-    .services-list:after{
- }
+.viber{
+    background: url(/static/main_app/img/viber.png);
+    background-size: 40px 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 42%;
+    top: 50%;
+
 }
-@media only screen and (max-width: 480px){
- .services-list:before,
- .services-list:after{
-;
- }
+.gmail{
+    background: url(/static/main_app/img/gmail.png);
+    background-size: 40px 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 68%;
+    top: 50%;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .desktop-header-menu{
+        position: relative;
+        right: 0;
+    }
+    .serviceBox{
+        margin-bottom: 50px;
+    }
+    .services-list{
+        margin-bottom: 30px;
+    }
 }
