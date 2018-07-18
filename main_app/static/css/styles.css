@@ -27,7 +27,6 @@ button.new-button{
     color: #ffffff;
     margin-right: 0;
     margin-left: 0;
-    font-family: 'Poor Story', cursive;
 }
 .header-row{
     min-height: 100px;
@@ -38,6 +37,8 @@ button.new-button{
     border-bottom: 4px solid #47B3B5;
     font-family: 'Poor Story', cursive;
 }
+
+
 .custom-toggler .navbar-toggler-icon {
 	border: 1px dashed rgba(255,255,255, 1);
 	border-radius: 5px;
@@ -237,42 +238,6 @@ button.new-button{
     opacity: 0;
     transition: opacity 2s;
 }
-a.telegram{
-    background: url(/static/main_app/img/telegram.png) no-repeat;
-    display: inline-block;
-    background-size: 40px 40px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    margin-left: 15%;
-}
-a.viber{
-    background: url(/static/main_app/img/viber.png) no-repeat;
-    display: inline-block;
-    background-size: 40px 40px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    margin-left: 42%;
-}
-a.gmail{
-    background: url(/static/main_app/img/gmail.png) no-repeat;
-    display: inline-block;
-    background-size: 40px 40px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    margin-left: 68%;
-}
-
-
-
-
-
-
 
 @media screen and (max-width: 1000px) {
     .desktop-header-menu{
@@ -282,4 +247,66 @@ a.gmail{
     .serviceBox{
         margin-bottom: 50px;
     }
+}
+
+.services-list{
+    border: 1px solid #47B3B5;
+    text-align: center;
+    padding: 5px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+.services-list:before,
+.services-list:after{
+     content: "";
+     width: 200%;
+     height: 200%;
+     background: #1d242c;
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     z-index: -1;
+     transition: all 1s ease 0.1s;
+}
+.services-list:before{
+    background: rgba(9, 3, 18, 0.69);
+
+}
+.services-list:hover:before{
+    background: #47B3B5;
+}
+.services-list:hover:after{
+    transform: translateY(10%);
+    background: rgba(9, 3, 18, 0.69);
+}
+.services-list:hover:before{
+}
+.services-list .services-list-content{
+    color: #fff;
+    line-height: 25px;
+    padding: 0 20px 20px;
+}
+.services-list .title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.services-list .description{
+    font-size: 14px;
+}
+@media only screen and (max-width: 990px){
+    .services-list{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 767px){
+    .services-list:before,
+    .services-list:after{
+ }
+}
+@media only screen and (max-width: 480px){
+ .services-list:before,
+ .services-list:after{
+;
+ }
 }
