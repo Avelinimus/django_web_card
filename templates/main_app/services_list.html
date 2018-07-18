@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   {% block title %} Lab Room 47 {%endblock %}
+   {% block title %} Lab Room 47 {% endblock %}
 </head>
 <body>
     {% block main_menu %}
@@ -25,14 +25,24 @@
     {% endblock %}
 
     {% block content %}
-        {% for service in service_list %}
-            <a href="{{ service.get_absolute_url }}">{{ service.name }}</a>
-            <p>{{ service.price }}</p>
-            {% autoescape off %}
-                {{ service.description }}
-            {% endautoescape %}
-            {{ service.image }}
-        {% endfor %}
+        <div class="row" style="margin-right: 0; margin-left: 0; min-height: 350px;border-bottom: 4px solid #47B3B5;">
+            {% for service in service_list %}
+                <div class="col-12 col-lg-4">
+                    <div class="services-list">
+                        <div class="services-list-content">
+                             <h3 class="title">{{ service.name }}</h3>
+                             <p class="description">
+                                 {% autoescape off %}
+                                     {{ service.description }}
+                                 {% endautoescape %}
+                             </p>
+                             <p>{{ service.price }}</p>
+                             <a href="{{ service.get_absolute_url }}">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     {% endblock %}
 </body>
 </html>
