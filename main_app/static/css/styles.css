@@ -1,9 +1,18 @@
-.container-fluid{
-    color: #ffffff;
-    margin-right: 0;
-    margin-left: 0;
+p{
+    font-family: 'Roboto Condensed', sans-serif;
 }
-
+form {
+    margin: auto;
+    text-align: center  ;
+}
+textarea{
+    width: 300px;
+    height: 150px;
+}
+label{
+    margin: auto;
+}
+input{}
 button.new-button{
     color: white;
     text-align: center;
@@ -15,35 +24,21 @@ button.new-button{
 }
 .container-fluid{
     background-color: #1d242c;
-    min-height: 1500px;
+    color: #ffffff;
+    margin-right: 0;
+    margin-left: 0;
 }
 .header-row{
     min-height: 100px;
 }
 .content-row{
-    min-height: 500px;
+    min-height: 700px;
     padding: 15px;
-    border-top: 4px solid #47B3B5;
     border-bottom: 4px solid #47B3B5;
+    font-family: 'Poor Story', cursive;
 }
 
-.about-row{
-    min-height: 300px;
-    border-bottom: 4px solid #47B3B5;
-    color: #c5c5c5;
-}
-.about-site-row{
-    min-height: 500px;
-    border-bottom: 4px solid #47B3B5;
-    text-align: center;
-}
 
-.about-site-row h3{
-    padding-top: 20px;
-}
-.about-site-col img{
-    transform: rotate(25grad)
-}
 .custom-toggler .navbar-toggler-icon {
 	border: 1px dashed rgba(255,255,255, 1);
 	border-radius: 5px;
@@ -259,5 +254,7 @@ button.new-button{
         position: relative;
         right: 0;
     }
-    .serviceBox{ margin-bottom: 30px; }
+    .serviceBox{
+        margin-bottom: 50px;
+    }
 }

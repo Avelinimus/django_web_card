@@ -26,7 +26,7 @@
 
         </div>
         <h2 align="center" style="padding-top: 30px">Что входит в разработку сайта</h2>
-        <div class="row" style="margin-right: 0; margin-left: 0; min-height: 350px">
+        <div class="row" style="margin-right: 0; margin-left: 0; min-height: 350px;border-bottom: 4px solid #47B3B5;">
 
             <div class="col-12 col-lg-4">
                 <div class="serviceBox">
@@ -85,7 +85,7 @@
     {% block content %}
         {% for index in index_elements %}
             {{ index.title }}
-            {{ index.description }}
+            {% autoescape off %}{{ index.description }}{% endautoescape %}
         {% endfor %}
     {% endblock %}
 </body>
