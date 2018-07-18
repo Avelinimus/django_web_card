@@ -23,7 +23,7 @@
             <a class="nav-link" href="{% url 'main_app:faq' %}">FAQ</a>
         </li>
     {% endblock %}
-
+#
     {% block content %}
         {% for service in service_list %}
             <a href="{{ service.get_absolute_url }}">{{ service.name }}</a>
