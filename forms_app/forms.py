@@ -6,7 +6,7 @@ from .models import Order, Support
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('name', 'surname', 'telephone', 'email', 'time', 'comment', 'flag')
+        fields = ('name', 'surname', 'telephone', 'email', 'time', 'service', 'comment', 'flag')
         widgets = {'comment': forms.Textarea(attrs={'cols': 80})}
 
 

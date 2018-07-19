@@ -12,6 +12,10 @@ class Order(models.Model):
     telephone = models.CharField(max_length=12, verbose_name='Мобильный телефон', default='380', blank=True)
     email = models.EmailField(verbose_name='E-mail', db_index=True, max_length=30)
     time = models.CharField(max_length=30, verbose_name='Удобное для вас время', default='Не важно', blank=True)
+    service = models.CharField(max_length=20, choices=(('Визитка', 'Визитка'),
+                                                      ('Интернет-магазин', 'Интернет-магазин'),
+                                                      ('Уникальный сайт', 'Уникальный сайт')),
+                               default='Уникальный сайт', verbose_name='Услуга')
     comment = models.CharField(max_length=200, verbose_name='Комментарий', blank=True)
     flag = models.BooleanField(blank=True, verbose_name='Оповестить Вас на почте?', default=False)
 

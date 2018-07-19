@@ -9,4 +9,4 @@ class SupportAdmin(admin.ModelAdmin):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ['name', 'surname', 'telephone', 'email', 'time', 'comment']
+    list_display = ['name', 'surname', 'telephone', 'email', 'time', 'service', 'comment']

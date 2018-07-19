@@ -13,12 +13,14 @@ def send_order(request):
             email = form.cleaned_data['email']
             time = form.cleaned_data['time']
             comment = form.cleaned_data['comment']
+            service = form.cleaned_data['service']
             flag = form.cleaned_data['flag']
             data = ' Имя: {0} {1}, \n\n ' \
                    'Мобильный телефон: {2}, \n\n ' \
                    'E-mail: {3}, \n\n ' \
                    'Удобное время: {4}, \n\n ' \
-                   'Комментарий: {5}'.format(name, surname, telephone, email, time, comment)
+                   'Услуга: {5}, \n\n ' \
+                   'Комментарий: {6}'.format(name, surname, telephone, email, time, service, comment)
             send_mail('Заказ',
                       data,
                       email,
