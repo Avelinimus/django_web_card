@@ -1,6 +1,4 @@
-p{
-    font-family: 'Roboto Condensed', sans-serif;
-}
+
 form {
     margin: auto;
     text-align: center  ;
@@ -27,6 +25,7 @@ button.new-button{
     color: #ffffff;
     margin-right: 0;
     margin-left: 0;
+    font-family: 'Poor Story', cursive;
 }
 .header-row{
     min-height: 100px;
@@ -60,6 +59,7 @@ button.new-button{
     position: relative;
     z-index: 1;
     transition: all 0.5s ease 0s;
+    min-height: 350px;
 }
 .serviceBox:before,
 .serviceBox:after{
@@ -247,6 +247,8 @@ button.new-button{
     position: relative;
     z-index: 1;
     transition: all 0.5s ease 0s;
+    min-height: 480px;
+    max-height: 480px;
 }
 .services-list:before,
 .services-list:after{

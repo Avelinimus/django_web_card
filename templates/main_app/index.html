@@ -11,7 +11,7 @@
 
     {% block row %}
 
-        <div class="row about-row" style="margin-right: 0; margin-left: 0; color: white">
+        <div class="row about-row" style="margin-right: 0; margin-left: 0; color: white;">
 
             <div class="col-12">
                 <h2 align="center" style="padding-top: 30px">Chamber</h2><h2 align="center" style="white-space:nowrap; color: #47B3B5">47</h2>
@@ -26,7 +26,7 @@
 
         </div>
         <h2 align="center" style="padding-top: 30px">Что входит в разработку сайта</h2>
-        <div class="row" style="margin-right: 0; margin-left: 0; min-height: 350px;border-bottom: 4px solid #47B3B5;">
+        <div class="row" style="margin-right: 0; margin-left: 0; min-height: 450px;border-bottom: 4px solid #47B3B5;" >
 
             <div class="col-12 col-lg-4">
                 <div class="serviceBox">
@@ -87,10 +87,14 @@
     {% endblock %}
 
     {% block content %}
-        {% for index in index_elements %}
-            {{ index.title }}
-            {% autoescape off %}{{ index.description }}{% endautoescape %}
-        {% endfor %}
+         <div class="col-12" style="text-align: center">
+            {% for index in index_elements %}
+                <h2>{{ index.title }}</h2>
+                <br>
+                <br>
+                {% autoescape off %}{{ index.description }}{% endautoescape %}
+            {% endfor %}
+        </div>
     {% endblock %}
 </body>
 </html>

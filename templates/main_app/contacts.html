@@ -26,8 +26,10 @@
 
     {% block content %}
         {% for contact in contacts_elements %}
-            <div class="col-12" >
-                <h1>{{ contact.title }}</h1>
+            <div class="col-12" style="text-align: center">
+                <h2>{{ contact.title }}</h2>
+                <br>
+                <br>
                 {% autoescape off %}
                     <div>{{ contact.description }}</div>
                 {% endautoescape %}
