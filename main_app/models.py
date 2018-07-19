@@ -28,7 +28,7 @@ class Services(models.Model):
     name = models.CharField(max_length=100, db_index=True, verbose_name='Название типа сайта')
     slug = models.SlugField(max_length=200, db_index=True,
                             unique=True, help_text='Нужно использовать для создания "хороших" URL-ов')
-    price = models.price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Цена(грн)")
+    price = models.price = models.CharField(max_length=20, verbose_name="Цена(грн)")
     available = models.BooleanField(default=False, verbose_name='Доступна услуга')
     image = models.ImageField(upload_to='products/img/%Y/%m/%d/', blank=True,
                               verbose_name="Картинка для услуги(300 x 300)")

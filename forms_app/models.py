@@ -13,7 +13,7 @@ class Order(models.Model):
     email = models.EmailField(verbose_name='E-mail', db_index=True, max_length=30)
     time = models.CharField(max_length=30, verbose_name='Удобное для вас время', default='Не важно', blank=True)
     comment = models.CharField(max_length=200, verbose_name='Комментарий', blank=True)
-    flag = models.BooleanField(blank=True, verbose_name='Отправить оповещение вам на почту?', default=False)
+    flag = models.BooleanField(blank=True, verbose_name='Оповестить Вас на почте?', default=False)
 
 
 class Support(models.Model):
@@ -24,7 +24,7 @@ class Support(models.Model):
 
     name = models.CharField(max_length=100, verbose_name='Имя', db_index=True)
     email = models.EmailField(max_length=100, verbose_name='E-mail', db_index=True)
-    comment = models.TextField(verbose_name='Комментарий', db_index=True)
+    comment = models.TextField(verbose_name='Описание проблемы/вопроса', db_index=True)
 
     def __str__(self):
         return self.email

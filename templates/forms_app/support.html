@@ -25,9 +25,11 @@
     {% endblock %}
 
     {% block content %}
+        <div class="col-12">
+        <h2 class="col-12" align="center">Опишите нам Ваш вопрос/проблему:</h2><br>
         <form method="POST">
+        <div class="col-12">
             {% csrf_token %}
-            <div>
                 {% for field in form %}
                 <div class="form-group">
                     {{field.label_tag}}
@@ -35,9 +37,10 @@
                     <div class="errors">{{field.errors}}</div>
                 </div>
                 {% endfor %}
-            </div>
             <input type="submit" value="Отправить">
+        </div>
         </form>
+        </div>
     {% endblock content %}
 </body>
 </html>

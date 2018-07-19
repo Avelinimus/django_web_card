@@ -25,7 +25,7 @@
     {% endblock %}
 #
     {% block content %}
-        <div class="col-12"><h2 align="center">Услуги которые мы можем предоставить:</h2></div>
+        <div class="col-12"><h2 align="center">Предоставляемые нами услуги:</h2></div>
             {% for service in service_list %}
                 <div class="col-12 col-lg-4">
                     <div class="services-list">
@@ -37,12 +37,17 @@
                                      {{ service.description }}
                                  {% endautoescape %}
                              </p>
-                             <p>{{ service.price }} грн.</p>
-                             <a href="{{ service.get_absolute_url }}">Подробнее</a>
+                             <p style="color: #ff365d">Примерная стоимость:</p>
+                             <p>{{ service.price }}</p>
                         </div>
                     </div>
                 </div>
             {% endfor %}
+            <div class="col-12" style="text-align: center; padding-top: 30px">
+                <a href="{% url 'main_app:service_list' %}"style="margin: auto">
+                    <button class="new-button">Заказать</button>
+                </a>
+            </div>
     {% endblock %}
 </body>
 </html>

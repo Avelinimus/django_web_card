@@ -25,6 +25,8 @@
     {% endblock %}
 
     {% block content %}
+        <div class="col-12" align="center">
+        <h2 class="col-12" align="center">Заполните форму, чтобы мы могли с вами связаться:</h2><br>
         <form method="POST">
             {% csrf_token %}
             <div>
@@ -38,6 +40,7 @@
             </div>
             <input type="submit" value="Отправить">
         </form>
+        </div>
     {% endblock content %}
 </body>
 </html>

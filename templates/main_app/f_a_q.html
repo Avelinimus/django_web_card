@@ -26,8 +26,8 @@
 
     {% block content %}
         {% for faq in faq_elements %}
-            <div>
-                <h1>Раздел вопросов о {{ faq.section }}</h1>
+            <div class="col-12" align="center">
+                <h2>{{ faq.section }}</h2>
                 {% autoescape off %}
                     <p>{{ faq.description }}</p>
                 {% endautoescape %}
