@@ -11,6 +11,10 @@ label{
     margin: auto;
 }
 input{}
+select {
+    display: inline-block;
+    height: 30px;
+}
 button.new-button{
     color: white;
     text-align: center;
