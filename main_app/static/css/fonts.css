@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic,cyrillic-ext');
-@import url('https://fonts.googleapis.com/css?family=Poor+Story');
-p, b{
-    font-family: 'Poor Story', cursive;
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Poiret+One');
+body{
+    font-family: 'Comfortaa', cursive;
 }

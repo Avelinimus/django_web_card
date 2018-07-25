@@ -1,4 +1,6 @@
-
+html, body{
+overflow-x:hidden
+}
 form {
     margin: auto;
     text-align: center  ;
@@ -29,7 +31,7 @@ button.new-button{
     color: #ffffff;
     margin-right: 0;
     margin-left: 0;
-    font-family: 'Poor Story', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 .header-row{
     min-height: 100px;
@@ -38,7 +40,7 @@ button.new-button{
     min-height: 700px;
     padding: 15px;
     border-bottom: 4px solid #47B3B5;
-    font-family: 'Poor Story', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 
 
@@ -336,6 +338,15 @@ button.new-button{
     }
     .services-list{
         margin-bottom: 30px;
+    }
+    body{
+        font-family: 'Poiret One', cursive;
+    }
+    .container-fluid{
+        font-family: 'Poiret One', cursive;
+    }
+    .content-row{
+        font-family: 'Poiret One', cursive;
     }
 }
 input, select, textarea{
