@@ -338,3 +338,28 @@ button.new-button{
         margin-bottom: 30px;
     }
 }
+input, select, textarea{
+    border-radius: 6px;
+    border: 2px solid #47B3B5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#id_flag{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 246, 246);
+}
+#id_flag:checked{
+    background-color: #ff365d;
+    content: 'XXX';
+}
+
+.submit{
+    color: white;
+    text-align: center;
+    background-color: #47B3B5;
+    border: none;
+    height: 30px;
+    border-radius: 6px;
+    width: 155px;
+}
